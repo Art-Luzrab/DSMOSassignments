@@ -225,6 +225,7 @@ const books = [
   },
 ];
 
+/*
 // Destructuring Arrays
 
 // 1.1
@@ -253,3 +254,12 @@ const ratingStars = [63405, 1808];
 
 const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
 console.log(fiveStarRatings, oneStarRatings, threeStarRatings);
+
+**/
+
+// Destructuring Objects
+
+//2.1
+
+const { title, author, ISBN } = books[0];
+console.log(title, author, ISBN);
