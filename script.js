@@ -273,3 +273,11 @@ console.log(tags);
 
 const { language, programmingLanguage = "unknown" } = books[6];
 console.log(language, programmingLanguage);
+
+// 2.4
+
+let bookTitle = "unknown";
+let bookAuthor = "unknown";
+
+({ title: bookTitle, author: bookAuthor } = books[0]);
+console.log(bookTitle, bookAuthor);
