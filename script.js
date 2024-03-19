@@ -224,3 +224,10 @@ const books = [
     highlighted: true,
   },
 ];
+
+// Destructuring Arrays
+
+// 1.1
+
+const [firstBook, secondBook] = books;
+console.log(firstBook, secondBook);
