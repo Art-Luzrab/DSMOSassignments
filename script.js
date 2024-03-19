@@ -236,3 +236,14 @@ console.log(firstBook, secondBook);
 
 const [, , thirdBook] = books;
 console.log(thirdBook);
+
+// 1.3
+
+const ratings = [
+  ["rating", 4.19],
+  ["ratingsCount", 144584],
+];
+
+const [[, rating], [, ratingsCount]] = ratings;
+console.log(rating, ratingsCount);
+console.log(ratings);
