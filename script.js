@@ -246,4 +246,10 @@ const ratings = [
 
 const [[, rating], [, ratingsCount]] = ratings;
 console.log(rating, ratingsCount);
-console.log(ratings);
+
+// 1.4
+
+const ratingStars = [63405, 1808];
+
+const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
+console.log(fiveStarRatings, oneStarRatings, threeStarRatings);
