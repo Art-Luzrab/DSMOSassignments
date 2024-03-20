@@ -306,3 +306,12 @@ printBookInfo(books[0]);
 
 const bookAuthors = [...books[0].author, ...books[1].author];
 console.log(bookAuthors);
+
+// 3.2
+
+const spellWord = function (word) {
+  console.log(...word);
+};
+
+spellWord("Candy");
+spellWord("AmongUS");
