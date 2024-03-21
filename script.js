@@ -330,3 +330,10 @@ console.log(mainKeyword, rest);
 
 const { publisher: bookPublisher, ...restOfTheBook } = books[0];
 console.log(bookPublisher, restOfTheBook);
+
+// 4.3
+
+const printBookAuthorsCount = function (title, ...authors) {
+  console.log(`The book ${title} has ${authors.length} authors.`);
+};
+printBookAuthorsCount("Algorithms", "Robert Sedgewick", "Kevin Wayne");
