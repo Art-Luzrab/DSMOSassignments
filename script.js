@@ -298,7 +298,7 @@ const printBookInfo = function ({ title, author, year = " year unknown" }) {
 };
 
 printBookInfo(books[0]);
-**/
+
 
 // The Spread Operator
 
@@ -315,3 +315,13 @@ const spellWord = function (word) {
 
 spellWord("Candy");
 spellWord("AmongUS");
+
+
+**/
+
+// Rest Pattern and Parameters
+
+// 4.1
+
+const [mainKeyword, ...rest] = books[0].keywords;
+console.log(mainKeyword, rest);
