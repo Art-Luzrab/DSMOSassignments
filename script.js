@@ -325,3 +325,8 @@ spellWord("AmongUS");
 
 const [mainKeyword, ...rest] = books[0].keywords;
 console.log(mainKeyword, rest);
+
+// 4.2
+
+const { publisher: bookPublisher, ...restOfTheBook } = books[0];
+console.log(bookPublisher, restOfTheBook);
