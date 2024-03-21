@@ -317,7 +317,7 @@ spellWord("Candy");
 spellWord("AmongUS");
 
 
-**/
+
 
 // Rest Pattern and Parameters
 
@@ -337,3 +337,13 @@ const printBookAuthorsCount = function (title, ...authors) {
   console.log(`The book ${title} has ${authors.length} authors.`);
 };
 printBookAuthorsCount("Algorithms", "Robert Sedgewick", "Kevin Wayne");
+**/
+
+// Short Circuiting (&& and ||)
+
+// 5.1
+
+function hasExamplesInJava(arr) {
+  return arr.programmingLanguage === "Java" || "no data available";
+}
+hasExamplesInJava(books[0]);
