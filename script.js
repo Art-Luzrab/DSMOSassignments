@@ -337,7 +337,7 @@ const printBookAuthorsCount = function (title, ...authors) {
   console.log(`The book ${title} has ${authors.length} authors.`);
 };
 printBookAuthorsCount("Algorithms", "Robert Sedgewick", "Kevin Wayne");
-**/
+
 
 // Short Circuiting (&& and ||)
 
@@ -353,4 +353,13 @@ hasExamplesInJava(books[0]);
 for (let i = 0; i < books.length; i++) {
   books[i].onlineContent &&
     console.log(`${books[i].title} provides online content.`);
+}
+**/
+// The Nullesh Oalescing Operator (??)
+
+// 6.1
+
+for (let i = 0; i < books.length; i++) {
+  books[i].onlineContent ??
+    console.log(`${books[i].title} provides no data about its online content.`);
 }
