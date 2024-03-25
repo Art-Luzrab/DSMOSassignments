@@ -60,3 +60,9 @@ const [gk, ...fieldPlayers] = players1;
 console.log(gk);
 console.log(fieldPlayers);
 console.log(" -----------------------------------------");
+
+// Question 3
+console.log("QUESTION 3---------------------------------------");
+const allPlayers = [...game.players[0], ...game.players[1]];
+console.log(allPlayers);
+console.log(" -----------------------------------------");
