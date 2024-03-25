@@ -354,7 +354,7 @@ for (let i = 0; i < books.length; i++) {
   books[i].onlineContent &&
     console.log(`${books[i].title} provides online content.`);
 }
-**/
+
 // The Nullesh Oalescing Operator (??)
 
 // 6.1
@@ -362,4 +362,14 @@ for (let i = 0; i < books.length; i++) {
 for (let i = 0; i < books.length; i++) {
   books[i].onlineContent ??
     console.log(`${books[i].title} provides no data about its online content.`);
+}
+**/
+
+// Logical Assignment Operators
+
+// 7.1
+
+for (let i = 0; i < books.length; i++) {
+  books[i].edition ??= 1;
+  console.log(books[i].title, books[i].edition);
 }
