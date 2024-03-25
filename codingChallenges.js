@@ -72,3 +72,14 @@ console.log("QUESTION 4---------------------------------------");
 const players1Final = [...game.players[0], "Thiago", "Coutinho", "Perisic"];
 console.log(players1Final);
 console.log(" -----------------------------------------");
+
+// Question 5
+console.log("QUESTION 5---------------------------------------");
+
+console.log(game.odds);
+const team1 = game.odds.team1;
+const draw = game.odds.x;
+const team2 = game.odds.team2;
+console.log(team1, draw, team2);
+
+console.log(" -----------------------------------------");
