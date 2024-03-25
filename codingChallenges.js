@@ -44,10 +44,19 @@ const game = {
 };
 
 // Question 1
+console.log("QUESTION 1 ---------------------------------------");
 console.log(game.players);
 
 const players1 = game.players[0];
-console.log(players1);
+console.log("team 1:", players1);
 
 const players2 = game.players[1];
-console.log(players2);
+console.log("team 2", players2);
+console.log(" -----------------------------------------");
+
+// Question 2
+console.log("QUESTION 2---------------------------------------");
+const [gk, ...fieldPlayers] = players1;
+console.log(gk);
+console.log(fieldPlayers);
+console.log(" -----------------------------------------");
