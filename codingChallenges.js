@@ -66,3 +66,9 @@ console.log("QUESTION 3---------------------------------------");
 const allPlayers = [...game.players[0], ...game.players[1]];
 console.log(allPlayers);
 console.log(" -----------------------------------------");
+
+// Question 4
+console.log("QUESTION 4---------------------------------------");
+const players1Final = [...game.players[0], "Thiago", "Coutinho", "Perisic"];
+console.log(players1Final);
+console.log(" -----------------------------------------");
