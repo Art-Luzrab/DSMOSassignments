@@ -45,13 +45,8 @@ const game = {
 
 // Question 1
 console.log("QUESTION 1 ---------------------------------------");
-console.log(game.players);
-
-const players1 = game.players[0];
-console.log("team 1:", players1);
-
-const players2 = game.players[1];
-console.log("team 2", players2);
+const [players1, players2] = game.players;
+console.log(players1, players2);
 console.log(" -----------------------------------------");
 
 // Question 2
@@ -63,23 +58,22 @@ console.log(" -----------------------------------------");
 
 // Question 3
 console.log("QUESTION 3---------------------------------------");
-const allPlayers = [...game.players[0], ...game.players[1]];
+const allPlayers = [...players1, ...players2];
 console.log(allPlayers);
 console.log(" -----------------------------------------");
 
 // Question 4
 console.log("QUESTION 4---------------------------------------");
-const players1Final = [...game.players[0], "Thiago", "Coutinho", "Perisic"];
+const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
 console.log(players1Final);
 console.log(" -----------------------------------------");
 
 // Question 5
 console.log("QUESTION 5---------------------------------------");
 
-console.log(game.odds);
-const team1 = game.odds.team1;
-const draw = game.odds.x;
-const team2 = game.odds.team2;
+const {
+  odds: { team1, x: draw, team2 },
+} = game;
 console.log(team1, draw, team2);
 
 console.log(" -----------------------------------------");
@@ -87,11 +81,17 @@ console.log(" -----------------------------------------");
 // Question 6
 console.log("QUESTION 6---------------------------------------");
 const printGoals = function (...players) {
-  const goals = players.length;
-
-  console.log(players, goals);
+  console.log(`${players.length} goals were scored.`);
 };
 
 printGoals("Davies", "Muller", "Kimmich");
+printGoals(...game.scored);
 
+console.log(" -----------------------------------------");
+
+// Question 7
+console.log("QUESTION 7---------------------------------------");
+
+team1 < team2 && console.log("Team 1 is more likely to win");
+team2 < team1 && console.log("Team 1 is more likely to win");
 console.log(" -----------------------------------------");
