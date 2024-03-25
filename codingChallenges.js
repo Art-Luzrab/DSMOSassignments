@@ -83,3 +83,15 @@ const team2 = game.odds.team2;
 console.log(team1, draw, team2);
 
 console.log(" -----------------------------------------");
+
+// Question 6
+console.log("QUESTION 6---------------------------------------");
+const printGoals = function (...players) {
+  const goals = players.length;
+
+  console.log(players, goals);
+};
+
+printGoals("Davies", "Muller", "Kimmich");
+
+console.log(" -----------------------------------------");
