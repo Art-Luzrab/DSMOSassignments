@@ -373,7 +373,7 @@ for (let i = 0; i < books.length; i++) {
   books[i].edition ??= 1;
   console.log(books[i].title, books[i].edition);
 }
-**/
+
 // 7.2
 
 for (let i = 0; i < books.length; i++) {
@@ -385,3 +385,4 @@ for (let i = 0; i < books.length; i++) {
     books[i].highlighted
   );
 }
+**/
