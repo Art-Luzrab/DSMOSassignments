@@ -385,7 +385,7 @@ for (let i = 0; i < books.length; i++) {
     books[i].highlighted
   );
 }
-**/
+
 
 // Looping Arrays: The For Of Loop
 
@@ -397,3 +397,32 @@ for (const x of books) {
   pageSum += x.pages;
   console.log(pageSum);
 }
+**/
+
+// 8.2
+
+const allAuthors = [];
+
+// Solution 1
+
+// for (const book of books) {
+//   if (typeof book.author === "string") {
+//     allAuthors.push(book.author);
+//   } else if (book.author.length > 1) {
+//     allAuthors.push(...book.author);
+//   }
+// }
+
+// Solution 2
+
+for (const book of books) {
+  if (typeof book.author === "string") {
+    allAuthors.push(book.author);
+  } else {
+    for (const author of book.author) {
+      allAuthors.push(author);
+    }
+  }
+}
+
+console.log(allAuthors);
