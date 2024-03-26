@@ -397,7 +397,7 @@ for (const x of books) {
   pageSum += x.pages;
   console.log(pageSum);
 }
-**/
+
 
 // 8.2
 
@@ -426,3 +426,10 @@ for (const book of books) {
 }
 
 console.log(allAuthors);
+
+//8.3
+
+for (const [i, el] of allAuthors.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
+**/
