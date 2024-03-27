@@ -436,7 +436,7 @@ for (const [i, el] of allAuthors.entries()) {
 
 // Enhanced Object Literals
 
-//8.1
+//9.1
 
 const bookData = [
   ["title", "Computer Networking: A Top-Down Approach"],
@@ -451,3 +451,13 @@ const newBook = {
   [bookData[2][0]]: bookData[2][1],
 };
 console.log(newBook);
+
+//9.2
+
+const pages = 880;
+
+const newBook2 = {
+  title: "The C Programming Language",
+  author: ["Brian W. Kernighan", "Dennis M. Ritchie"],
+  pages,
+};
