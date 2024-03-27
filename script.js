@@ -496,4 +496,6 @@ console.log(entries);
 // 11.3
 
 const entries2 = Object.entries(books[0].thirdParty.goodreads);
-console.log(entries2);
+
+// 11.4
+console.log("entries:", entries, "entries2:", entries2);
