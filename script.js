@@ -461,7 +461,7 @@ const newBook2 = {
   author: ["Brian W. Kernighan", "Dennis M. Ritchie"],
   pages,
 };
-**/
+
 
 // Optional Chaining
 
@@ -471,3 +471,15 @@ const getFirstKeyword = function (book) {
   console.log(book.keywords?.[0] ?? "Keyword Property Does Not Exist.");
 };
 getFirstKeyword(books[1]);
+**/
+
+// Looping Objects: Object Keys, Values and Entries
+
+// 11.1
+
+const entries = [];
+
+for (const key of Object.keys(books[0].thirdParty.goodreads)) {
+  entries.push([key]);
+}
+console.log(entries);
