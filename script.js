@@ -483,3 +483,12 @@ for (const key of Object.keys(books[0].thirdParty.goodreads)) {
   entries.push([key]);
 }
 console.log(entries);
+
+// 11.2
+
+for (const [index, value] of Object.values(
+  books[0].thirdParty.goodreads
+).entries()) {
+  entries[index].push(value);
+}
+console.log(entries);
