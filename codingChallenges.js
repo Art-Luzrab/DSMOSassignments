@@ -104,3 +104,12 @@ console.log(" -----------------------------------------");
 for (const [index, player] of game.scored.entries()) {
   console.log(`Goal ${index + 1}: ${player}`);
 }
+
+// Question 2
+let total = 0;
+for (const [key, value] of Object.entries(game.odds)) {
+  total += value;
+}
+
+const average = total / Object.values(game.odds).length;
+console.log("Total:", total, "Average:", average);
