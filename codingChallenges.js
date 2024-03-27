@@ -1,7 +1,5 @@
 "use strict";
 
-//  Coding Challenge 1
-
 const game = {
   team1: "Bayern Munich",
   team2: "Borrussia Dortmund",
@@ -42,6 +40,8 @@ const game = {
     team2: 6.5,
   },
 };
+//  Coding Challenge 1
+/* 
 
 // Question 1
 console.log("QUESTION 1 ---------------------------------------");
@@ -95,3 +95,12 @@ console.log("QUESTION 7---------------------------------------");
 team1 < team2 && console.log("Team 1 is more likely to win");
 team2 < team1 && console.log("Team 1 is more likely to win");
 console.log(" -----------------------------------------");
+**/
+
+// Coding Challenge 2
+
+// Question 1
+
+for (const [index, player] of game.scored.entries()) {
+  console.log(`Goal ${index + 1}: ${player}`);
+}
