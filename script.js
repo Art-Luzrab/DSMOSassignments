@@ -432,7 +432,7 @@ console.log(allAuthors);
 for (const [i, el] of allAuthors.entries()) {
   console.log(`${i + 1}: ${el}`);
 }
-**/
+
 
 // Enhanced Object Literals
 
@@ -461,3 +461,13 @@ const newBook2 = {
   author: ["Brian W. Kernighan", "Dennis M. Ritchie"],
   pages,
 };
+**/
+
+// Optional Chaining
+
+// 10.1
+
+const getFirstKeyword = function (book) {
+  console.log(book.keywords?.[0] ?? "Keyword Property Does Not Exist.");
+};
+getFirstKeyword(books[1]);
