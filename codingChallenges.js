@@ -106,19 +106,19 @@ for (const [index, player] of game.scored.entries()) {
 }
 
 // Question 2
-let total = 0;
-for (const [key, value] of Object.entries(game.odds)) {
-  total += value;
-}
+let average = 0;
+const odds = Object.values(game.odds);
 
-const average = total / Object.values(game.odds).length;
-console.log("Total:", total, "Average:", average);
+for (const odd of odds) {
+  average += odd;
+}
+average /= odds.length;
+console.log(average);
 
 // Question 3
 
-for (const [key, value] of Object.entries(game.odds)) {
-  const teamName =
-    key === "team1" ? game.team1 : key === "team2" ? game.team2 : "draw";
+for (const [team, odd] of Object.entries(game.odds)) {
+  const teamStr = team === "x" ? "draw" : `victory for ${game[team]}`;
 
-  console.log(`Odd of victory for ${teamName}: ${value}`);
+  console.log(`Odd of ${teamStr}: ${odd}`);
 }
