@@ -113,3 +113,12 @@ for (const [key, value] of Object.entries(game.odds)) {
 
 const average = total / Object.values(game.odds).length;
 console.log("Total:", total, "Average:", average);
+
+// Question 3
+
+for (const [key, value] of Object.entries(game.odds)) {
+  const teamName =
+    key === "team1" ? game.team1 : key === "team2" ? game.team2 : "draw";
+
+  console.log(`Odd of victory for ${teamName}: ${value}`);
+}
