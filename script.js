@@ -562,4 +562,6 @@ const title = bookMap.get("title");
 const author = bookMap.get("author");
 console.log(`${title} by ${author}`);
 
+// 13.4
+console.log(bookMap.size);
 console.log(bookMap);
