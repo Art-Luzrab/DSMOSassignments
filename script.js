@@ -565,3 +565,10 @@ console.log(`${title} by ${author}`);
 // 13.4
 console.log(bookMap.size);
 console.log(bookMap);
+
+// 13.5
+if (bookMap.has("author")) {
+  console.log("The author of this book is known");
+} else {
+  console.log("The author of this book is unknown");
+}
