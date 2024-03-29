@@ -542,7 +542,7 @@ console.log(uniqueKeywordsArr);
 // 12.6
 uniqueKeywords.clear();
 console.log(uniqueKeywords);
-**/
+
 
 // Maps: Fundamentals
 
@@ -572,3 +572,9 @@ if (bookMap.has("author")) {
 } else {
   console.log("The author of this book is unknown");
 }
+**/
+
+// Maps: Iteration
+
+const firstBookMap = new Map(Object.entries(books[0]));
+console.log(firstBookMap);
