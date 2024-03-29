@@ -515,8 +515,12 @@ const allKeywords = [];
 // console.log(allKeywords);
 
 // Solution w/ for of loop
-
 for (const book of books) {
   allKeywords.push(...book.keywords);
 }
 console.log(allKeywords);
+
+// 12.2
+
+const uniqueKeywords = new Set(allKeywords);
+console.log(uniqueKeywords);
