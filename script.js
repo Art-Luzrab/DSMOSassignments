@@ -553,4 +553,7 @@ const bookMap = new Map([
   ["author", "Robert C. Martin"],
 ]);
 
+// 13.2
+
+bookMap.set("pages", 464);
 console.log(bookMap);
