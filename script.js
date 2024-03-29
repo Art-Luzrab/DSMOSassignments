@@ -499,7 +499,7 @@ const entries2 = Object.entries(books[0].thirdParty.goodreads);
 
 // 11.4
 console.log("entries:", entries, "entries2:", entries2);
-**/
+
 
 // Sets
 
@@ -542,3 +542,15 @@ console.log(uniqueKeywordsArr);
 // 12.6
 uniqueKeywords.clear();
 console.log(uniqueKeywords);
+**/
+
+// Maps: Fundamentals
+
+// 13.1
+
+const bookMap = new Map([
+  ["title", "Clean Code"],
+  ["author", "Robert C. Martin"],
+]);
+
+console.log(bookMap);
