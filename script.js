@@ -556,4 +556,10 @@ const bookMap = new Map([
 // 13.2
 
 bookMap.set("pages", 464);
+
+// 13.3
+const title = bookMap.get("title");
+const author = bookMap.get("author");
+console.log(`${title} by ${author}`);
+
 console.log(bookMap);
