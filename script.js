@@ -538,3 +538,7 @@ console.log(uniqueKeywords);
 // 12.5
 const uniqueKeywordsArr = [...uniqueKeywords];
 console.log(uniqueKeywordsArr);
+
+// 12.6
+uniqueKeywords.clear();
+console.log(uniqueKeywords);
