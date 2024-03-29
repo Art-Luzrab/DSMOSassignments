@@ -524,3 +524,9 @@ console.log(allKeywords);
 
 const uniqueKeywords = new Set(allKeywords);
 console.log(uniqueKeywords);
+
+// 12.3
+
+uniqueKeywords.add("coding");
+uniqueKeywords.add("science");
+console.log(uniqueKeywords);
