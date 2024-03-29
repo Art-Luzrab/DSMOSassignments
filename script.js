@@ -530,3 +530,7 @@ console.log(uniqueKeywords);
 uniqueKeywords.add("coding");
 uniqueKeywords.add("science");
 console.log(uniqueKeywords);
+
+// 12.4
+uniqueKeywords.delete("business");
+console.log(uniqueKeywords);
