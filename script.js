@@ -471,7 +471,7 @@ const getFirstKeyword = function (book) {
   console.log(book.keywords?.[0] ?? "Keyword Property Does Not Exist.");
 };
 getFirstKeyword(books[1]);
-**/
+
 
 // Looping Objects: Object Keys, Values and Entries
 
@@ -499,3 +499,24 @@ const entries2 = Object.entries(books[0].thirdParty.goodreads);
 
 // 11.4
 console.log("entries:", entries, "entries2:", entries2);
+**/
+
+// Sets
+
+// 12.1
+
+const allKeywords = [];
+
+// // Solution w/ for loop
+// for (let i = 0; i < books.length; i++) {
+//   // console.log(books[i].keywords);
+//   allKeywords.push(...new Set(books[i].keywords));
+// }
+// console.log(allKeywords);
+
+// Solution w/ for of loop
+
+for (const book of books) {
+  allKeywords.push(...book.keywords);
+}
+console.log(allKeywords);
