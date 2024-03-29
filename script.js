@@ -534,3 +534,7 @@ console.log(uniqueKeywords);
 // 12.4
 uniqueKeywords.delete("business");
 console.log(uniqueKeywords);
+
+// 12.5
+const uniqueKeywordsArr = [...uniqueKeywords];
+console.log(uniqueKeywordsArr);
