@@ -95,7 +95,6 @@ console.log("QUESTION 7---------------------------------------");
 team1 < team2 && console.log("Team 1 is more likely to win");
 team2 < team1 && console.log("Team 1 is more likely to win");
 console.log(" -----------------------------------------");
-**/
 
 // Coding Challenge 2
 
@@ -119,6 +118,29 @@ console.log(average);
 
 for (const [team, odd] of Object.entries(game.odds)) {
   const teamStr = team === "x" ? "draw" : `victory for ${game[team]}`;
-
+  
   console.log(`Odd of ${teamStr}: ${odd}`);
 }
+**/
+
+//////////////////////////////////////////////
+// Coding Challenge 3
+const gameEvents = new Map([
+  [17, "⚽️ GOAL"],
+  [36, "🔁 Substitution"],
+  [47, "⚽️ GOAL"],
+  [61, "🔁 Substitution"],
+  [64, "🔶 Yellow card"],
+  [69, "🔴 Red card"],
+  [70, "🔁 Substitution"],
+  [72, "🔁 Substitution"],
+  [76, "⚽️ GOAL"],
+  [80, "⚽️ GOAL"],
+  [92, "🔶 Yellow card"],
+]);
+
+// Question 1
+console.log(gameEvents);
+
+const events = new Set([...gameEvents.values()]);
+console.log(events);

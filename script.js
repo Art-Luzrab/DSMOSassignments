@@ -572,7 +572,7 @@ if (bookMap.has("author")) {
 } else {
   console.log("The author of this book is unknown");
 }
-**/
+
 
 // Maps: Iteration
 
@@ -585,3 +585,4 @@ console.log(firstBookMap);
 for (const [key, value] of firstBookMap) {
   if (typeof value === "number") console.log(key);
 }
+**/
