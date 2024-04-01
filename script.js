@@ -600,3 +600,8 @@ console.log(
   firstBookIBSN[9],
   firstBookIBSN[8]
 );
+
+// 15.2
+const quote =
+  "A computer once beat me at chess, but it was no match for me at kick boxing";
+console.log(quote.indexOf("chess"));
