@@ -179,6 +179,12 @@ console.log(
 console.log(
   "QUESTION 4 ------------------------------------------------------------------------------"
 );
+
+for (const [time, event] of gameEvents) {
+  time < 45
+    ? console.log(`[First Half] ${time}: ${event}`)
+    : console.log(`[Second Half] ${time}: ${event}`);
+}
 console.log(
   "---------------------------------------------------------------------------------"
 );
