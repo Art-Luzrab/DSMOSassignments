@@ -138,9 +138,26 @@ const gameEvents = new Map([
   [80, "⚽️ GOAL"],
   [92, "🔶 Yellow card"],
 ]);
-
+console.log(
+  "QUESTION 1 ------------------------------------------------------------------------------"
+);
 // Question 1
 console.log(gameEvents);
 
 const events = new Set([...gameEvents.values()]);
 console.log(events);
+console.log(
+  "---------------------------------------------------------------------------------"
+);
+
+console.log(
+  "QUESTION 2 ------------------------------------------------------------------------------"
+);
+// Question 2
+
+gameEvents.delete(92);
+console.log(gameEvents);
+
+console.log(
+  "---------------------------------------------------------------------------------"
+);
