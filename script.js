@@ -609,3 +609,11 @@ console.log(quote.indexOf("chess"));
 // 15.3
 
 console.log(quote.slice(quote.lastIndexOf(" ") + 1));
+
+// 15.4
+
+const isContributor = function (author) {
+  console.log(author.lastIndexOf("(Contributor)") !== -1);
+};
+isContributor("Julie Sussman (Contributor)");
+isContributor("Robert Sedgewick");
