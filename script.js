@@ -586,3 +586,17 @@ for (const [key, value] of firstBookMap) {
   if (typeof value === "number") console.log(key);
 }
 **/
+
+// Working With Strings - Part 1
+
+// 15.1
+
+console.log(books[0].ISBN);
+const firstBookIBSN = books[0].ISBN;
+
+console.log(
+  firstBookIBSN[6],
+  firstBookIBSN[4],
+  firstBookIBSN[9],
+  firstBookIBSN[8]
+);
