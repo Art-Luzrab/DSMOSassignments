@@ -161,3 +161,24 @@ console.log(gameEvents);
 console.log(
   "---------------------------------------------------------------------------------"
 );
+
+console.log(
+  "QUESTION 3 ------------------------------------------------------------------------------"
+);
+//Question 3
+const totalTime = 90;
+const eventAverage = totalTime / gameEvents.size;
+console.log(eventAverage);
+
+console.log(`An event happened, on average, every ${eventAverage} minutes.`);
+
+console.log(
+  "---------------------------------------------------------------------------------"
+);
+
+console.log(
+  "QUESTION 4 ------------------------------------------------------------------------------"
+);
+console.log(
+  "---------------------------------------------------------------------------------"
+);
