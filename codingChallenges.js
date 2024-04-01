@@ -155,7 +155,7 @@ console.log(
 );
 // Question 2
 
-gameEvents.delete(92);
+gameEvents.delete(64);
 console.log(gameEvents);
 
 console.log(
