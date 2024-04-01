@@ -643,3 +643,8 @@ const normalizeAuthorName = function (author) {
   console.log(fullName);
 };
 normalizeAuthorName("  JuliE sussMan (Contributor)");
+
+// 16.2
+
+const newBookTitle = books[1].title.replace("Programs", "Software");
+console.log(newBookTitle);
