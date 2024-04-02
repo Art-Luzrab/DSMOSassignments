@@ -683,3 +683,15 @@ const logBookCategories = function (words) {
 };
 
 logBookCategories(bookCategories);
+
+// 17.2
+
+const getKeywordsAsString = function (bookArr) {
+  const newArr = [];
+  for (const book of bookArr) {
+    newArr.push(book.keywords.join(";"));
+  }
+  console.log(newArr);
+};
+
+getKeywordsAsString(books);
