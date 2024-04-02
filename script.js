@@ -617,7 +617,6 @@ const isContributor = function (author) {
 };
 isContributor("Julie Sussman (Contributor)");
 isContributor("Robert Sedgewick");
-**/
 
 // Working With Strings - Part 2
 
@@ -626,19 +625,19 @@ isContributor("Robert Sedgewick");
 const normalizeAuthorName = function (author) {
   author = author.trim();
   const firstName = author.slice(0, author.indexOf(" "));
-
+  
   let lastName = "";
   if (author.indexOf(" ") === author.lastIndexOf(" ")) {
     lastName = author.slice(author.indexOf(" ") + 1, author.length);
   } else {
     lastName = author.slice(author.indexOf(" ") + 1, author.lastIndexOf(" "));
   }
-
+  
   const capitalizedFirstName =
-    firstName[0].toUpperCase() + firstName.slice(1).toLowerCase();
+  firstName[0].toUpperCase() + firstName.slice(1).toLowerCase();
   const capitalizedLastName =
-    lastName[0].toUpperCase() + lastName.slice(1).toLowerCase();
-
+  lastName[0].toUpperCase() + lastName.slice(1).toLowerCase();
+  
   const fullName = capitalizedFirstName + " " + capitalizedLastName;
   console.log(fullName);
 };
@@ -660,9 +659,27 @@ const logBookTheme = function (book) {
   } else if (
     book.endsWith("system") ||
     (book.endsWith("systems") && !book.includes("operating"))
-  ) {
-    console.log(
-      "This book is about some systems, but definitely not about operating systems"
-    );
+    ) {
+      console.log(
+        "This book is about some systems, but definitely not about operating systems"
+        );
+      }
+    };
+    **/
+
+// Working With Strings - Part 3
+
+// 17.1
+const bookCategories =
+  "science;computing;computer science;algorithms;business;operating systems;networking;electronics";
+
+const logBookCategories = function (words) {
+  words = words.split(";");
+  console.log(words);
+
+  for (const categories of words) {
+    console.log(categories);
   }
 };
+
+logBookCategories(bookCategories);
